@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Charlie Barnhart
+    9/2/2019-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Javascript page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div class="jumbotron">
+                <h1 class="display-4">My First Javascript Page</h1>
+                <p class="lead">This will be a Form That submits your Name and Contact preference below the form.</p>
+                <hr class="my-4">
+                <p>Using Event handling to display your submitted data. Your data will not be used against you.
+                </p>
+              </div>
+    
+
+    <form>
+        <div class="First Name">
+          <label for="FN">First Name</label>
+          <input type="First Name" class="form-control" id="Fname" aria-describedby="emailHelp" placeholder="Enter your First Name">
+          
+        </div>
+        <div class="Last Name">
+          <label for="LN">Last Name</label>
+          <input type="Last Name" class="form-control" id="Lname" placeholder="Enter your Last Name">
+        </div>
+        <div class="form-group">
+            <label for="PC">Prefered Contact</label>
+            <select class="form-control" id="PC">
+              <option value="Email">Email</option>
+              <option value="Cell Phone">Cell Phone</option>
+              <option value="Pony Express">Pony Express</option>
+              <option value="Wormhole">Wormhole</option>
+              <option value="Time Machine">Time Machine</option>
+            </select>
+          </div>
+        <input type="button" class="btn btn-primary" onclick="document.getElementById('FFN').innerHTML = document.getElementById('Fname').value, document.getElementById('FLN').innerHTML = document.getElementById('Lname').value, document.getElementById('FPC').innerHTML = document.getElementById('PC').value" value="Subscribe"> 
+      </form>
+      
+
+      <div class="first" id="FFN">
+     </div>
+     <div class="second" id="FLN">
+     </div>
+     <div class="third" id="FPC">
+     </div>
+
+
+  
+</body>
+</html>
